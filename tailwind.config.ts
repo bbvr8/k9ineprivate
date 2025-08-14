@@ -52,6 +52,23 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))'
+				},
+				vpn: {
+					connected: 'hsl(var(--vpn-connected))',
+					disconnected: 'hsl(var(--vpn-disconnected))'
+				},
+				server: {
+					good: 'hsl(var(--server-good))',
+					medium: 'hsl(var(--server-medium))',
+					poor: 'hsl(var(--server-poor))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
