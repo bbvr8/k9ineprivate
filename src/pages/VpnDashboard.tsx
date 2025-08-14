@@ -2,6 +2,7 @@ import { useState } from "react";
 import { VpnHeader } from "@/components/VpnHeader";
 import { ServerList, Server } from "@/components/ServerList";
 import { ConnectionPanel } from "@/components/ConnectionPanel";
+import { DisclaimerNotice } from "@/components/DisclaimerNotice";
 import { toast } from "sonner";
 
 const US_SERVERS: Server[] = [
@@ -57,7 +58,9 @@ export const VpnDashboard = () => {
     <div className="min-h-screen bg-background">
       <VpnHeader isConnected={isConnected} />
       
-      <div className="container mx-auto p-6">
+      <div className="container mx-auto p-6 space-y-6">
+        <DisclaimerNotice />
+        
         <div className="grid lg:grid-cols-2 gap-8">
           <div>
             <ConnectionPanel 
